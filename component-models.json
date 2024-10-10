@@ -645,7 +645,7 @@
       ]
     },
     {
-      "id": "columns",
+      "id": "columns-grid",
       "fields": [
         {
           "component": "select",

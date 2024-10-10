@@ -24,11 +24,11 @@
         "commerce-cart",
         "commerce-checkout",
         "commerce-order-confirmation",
-        "columns"
+        "columns-grid"
       ]
     },
     {
-      "id": "columns",
+      "id": "columns-grid",
       "components": [
         "columns-text",
         "columns-icon",
