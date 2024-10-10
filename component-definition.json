@@ -282,16 +282,16 @@
             }
           },
           {
-            "title": "Columns",
-            "id": "columns",
+            "title": "Columns Grid",
+            "id": "columns-grid",
             "plugins": {
               "xwalk": {
                 "page": {
                   "resourceType": "core/franklin/components/block/v1/block",
                   "template": {
-                    "name": "Columns",
-                    "model": "columns",
-                    "filter": "columns"
+                    "name": "Columns Grid",
+                    "model": "columns-grid",
+                    "filter": "columns-grid"
                   }
                 }
               }
