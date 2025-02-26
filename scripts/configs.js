@@ -27,20 +27,17 @@ export const calcEnvironment = () => {
 
 function buildConfigURL(environment) {
   const env = environment || calcEnvironment();
-  // let fileName = 'configs.json?sheet=prod';
   let fileName = 'configs.json';
+  if (aemxwalk === 'false'){
+    fileName = 'configs.json?sheet=prod';
+  }
   if (env !== 'prod') {
     fileName = `configs-${env}.json`;
   }
-  const configURL = new URL(`${window.location.origin}/${fileName}`);
-  /* eslint-disable-next-line no-use-before-define */
-  if (getAemAuthorEnv()) {
-    // eslint-disable-next-line no-use-before-define
-    const aemContentPath = getAemContentPath();
-    return new URL(`${window.location.origin}${aemContentPath}/${fileName}`);
-  }
-  return configURL;
-}
+ 
+      const configURL = new URL(`${window.location.origin}/${fileName}`);
+      return configURL;  
+  } 
 
 const getConfigForEnvironment = async (environment) => {
   const env = environment || calcEnvironment();
